@@ -10,7 +10,7 @@ export const myProjects = [
       "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
       "Added payment systems, localization, and product filtering for functionality improvements.",
     ],
-    href: "",
+    href: "https://www.instagram.com/de.andre_nguyen/",
     logo: "",
     image: "/assets/projects/accessories.jpg",
     tags: [
