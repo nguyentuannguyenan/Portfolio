@@ -22,7 +22,7 @@ const Project = ({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1 cursor-pointer hover-animation"
+          className="flex items-center gap-1 cursor-pointer"
         >
           Check it out
           <img src="assets/arrow-right.svg" className="w-5" />
