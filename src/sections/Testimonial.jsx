@@ -36,12 +36,12 @@ export default function Testimonial() {
     <div className="items-start mt-25 md:mt-35 c-space">
       <h2 className="text-heading">Hear From My Clients</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
-        <Marquee pauseOnHover className="[--duration:20s]">
+        <Marquee pauseOnHover className="[--duration:0s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
-        <Marquee reverse pauseOnHover className="[--duration:20s]">
+        <Marquee reverse pauseOnHover className="[--duration:0s]">
           {secondRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
