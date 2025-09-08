@@ -1,7 +1,7 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Project Bitchboy",
     description:
       "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
     subDescription: [
@@ -10,23 +10,23 @@ export const myProjects = [
       "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
       "Added payment systems, localization, and product filtering for functionality improvements.",
     ],
-    href: "https://www.instagram.com/de.andre_nguyen/",
+    href: "https://bitchboy.lol/",
     logo: "",
     image: "/assets/projects/accessories.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
+        name: "Three.js",
         path: "/assets/logos/csharp.svg",
       },
       {
         id: 2,
-        name: ".Net",
+        name: "JavaScript",
         path: "/assets/logos/dotnet.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
+        name: "Anime.js",
         path: "/assets/logos/efcore.png",
       },
       {
@@ -38,7 +38,7 @@ export const myProjects = [
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "Pokemondeckx",
     description:
       "A secure authentication and authorization system using Auth0 for seamless user management.",
     subDescription: [
@@ -47,13 +47,13 @@ export const myProjects = [
       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
       "Connected to a secure SQLite database for user data storage.",
     ],
-    href: "",
+    href: "https://pokemondeckx.netlify.app/",
     logo: "",
     image: "/assets/projects/auth-system.jpg",
     tags: [
       {
         id: 1,
-        name: "Auth0",
+        name: "VanillaJs",
         path: "/assets/logos/auth0.svg",
       },
       {
@@ -63,7 +63,7 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "SQLite",
+        name: "PokemonAPI",
         path: "/assets/logos/sqlite.svg",
       },
       {
@@ -75,7 +75,7 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Art Gallery",
     description:
       "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
     subDescription: [
@@ -84,35 +84,35 @@ export const myProjects = [
       "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
       "Integrated SQLite for efficient client-side database storage.",
     ],
-    href: "",
+    href: "https://renaissance-gallery.netlify.app/",
     logo: "",
     image: "/assets/projects/blazor-app.jpg",
     tags: [
       {
         id: 1,
-        name: "Blazor",
+        name: "Three.js",
         path: "/assets/logos/blazor.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
+        name: "JavaScript",
         path: "/assets/logos/dotnetcore.svg",
       },
       {
         id: 3,
-        name: "SQLite",
+        name: "HTML",
         path: "/assets/logos/sqlite.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
+        name: "CSS",
         path: "/assets/logos/tailwindcss.svg",
       },
     ],
   },
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Advice You Might Need",
     description:
       "A lightweight C++ game engine designed for 2D and 3D game development.",
     subDescription: [
@@ -121,28 +121,28 @@ export const myProjects = [
       "Implemented a scripting system for easy game customization.",
       "Optimized performance with multi-threading and efficient memory management.",
     ],
-    href: "",
+    href: "https://adviceyoumightneed.netlify.app/",
     logo: "",
     image: "/assets/projects/game-engine.jpg",
     tags: [
       {
         id: 1,
-        name: "C++",
+        name: "VanillaJs",
         path: "/assets/logos/cplusplus.svg",
       },
       {
         id: 2,
-        name: "C#",
+        name: "JavaScript",
         path: "/assets/logos/csharp.svg",
       },
       {
         id: 3,
-        name: "Git",
+        name: "HTML",
         path: "/assets/logos/git.svg",
       },
       {
         id: 4,
-        name: "Microsoft",
+        name: "CSS",
         path: "/assets/logos/microsoft.svg",
       },
     ],
@@ -184,43 +184,6 @@ export const myProjects = [
       },
     ],
   },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
 ];
 
 export const mySocials = [
@@ -239,20 +202,20 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Student Software Developer",
+    job: "Saxion Client Projects",
+    date: "2021-2024",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Worked in team projects for real clients provided by Saxion University of Applied Sciences",
+      "Designed and implemented user-friendly interfaces using HTML, CSS, and JavaScript.",
+      "Developed applications for multiple big companies, including Takeaway.com or also known as Thuisbezorgd.nl in the Netherlands.",
+      "Proposed and implemented new features based on client requirements, enhancing user experience and functionality for Scorion's audio feedback system.",
+      "Collaborated with Blcksystem to develop Bitchboy application",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
+    title: "Traineeship Software Engineer",
+    job: "Full-Stack Developer",
     date: "2023-2024",
     contents: [
       "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
@@ -265,7 +228,7 @@ export const experiences = [
   {
     title: "Freelance Developer",
     job: "Self-Employed",
-    date: "2025-Present",
+    date: "2024-Present",
     contents: [
       "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
       "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
