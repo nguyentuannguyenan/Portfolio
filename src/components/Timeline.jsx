@@ -1,5 +1,5 @@
 "use client";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion, useSpring } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({ data }) => {
@@ -7,20 +7,28 @@ export const Timeline = ({ data }) => {
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
 
+  // 🔹 Use ResizeObserver to update height automatically
   useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
-    }
-  }, [ref]);
+    if (!ref.current) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setHeight(entry.contentRect.height);
+    });
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
 
+  // 🔹 Avoid layoutEffect blocking reflows
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start 10%", "end 50%"],
+    layoutEffect: false,
   });
 
+  // 🔹 Smoothen motion values
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const smoothHeight = useSpring(heightTransform, { stiffness: 100, damping: 20 });
+  const smoothOpacity = useSpring(opacityTransform, { stiffness: 100, damping: 20 });
 
   return (
     <div className="c-space section-spacing" ref={containerRef}>
@@ -43,7 +51,7 @@ export const Timeline = ({ data }) => {
             </div>
 
             <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <div className="block mb-4 text-2xl font-bold text-left text-neutral-300 md:hidden ">
+              <div className="block mb-4 text-2xl font-bold text-left text-neutral-300 md:hidden">
                 <h3>{item.date}</h3>
                 <h3>{item.job}</h3>
               </div>
@@ -55,18 +63,18 @@ export const Timeline = ({ data }) => {
             </div>
           </div>
         ))}
+
+        {/* Vertical line with motion */}
         <div
-          style={{
-            height: height + "px",
-          }}
-          className="absolute md:left-1 left-1 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+          style={{ height: height + "px" }}
+          className="absolute md:left-1 left-1 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{
-              height: heightTransform,
-              opacity: opacityTransform,
+              height: smoothHeight,
+              opacity: smoothOpacity,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-lavender/50 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-lavender/50 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>
