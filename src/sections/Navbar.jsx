@@ -39,7 +39,7 @@ const navbar = () => {
       logo={logo}
       logoAlt="Company Logo"
       items={items}
-      baseColor="#fff"
+      baseColor="transparent"
       menuColor="#000"
       buttonBgColor="#111"
       buttonTextColor="#fff"
