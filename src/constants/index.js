@@ -189,7 +189,7 @@ export const myProjects = [
 export const mySocials = [
   
   {
-    name: "Linkedin",
+    name: "LinkedIn",
     href: "https://www.linkedin.com/in/nguyen-tuan-nguyen-an/",
     icon: "/assets/socials/linkedIn.svg",
   },
@@ -197,6 +197,11 @@ export const mySocials = [
     name: "Instagram",
     href: "https://www.instagram.com/de.andre_nguyen/",
     icon: "/assets/socials/instagram.svg",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/nguyentuannguyenan",
+    icon: "/assets/socials/github-mark-white.svg",
   },
 ];
 
