@@ -160,14 +160,6 @@ const CardNav = ({
           <div className="logo-container">
             <img src={logo} alt={logoAlt} className="logo" />
           </div>
-
-          <button
-            type="button"
-            className="card-nav-cta-button"
-            style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
-          >
-            Get Started
-          </button>
         </div>
 
         <div className="card-nav-content" aria-hidden={!isExpanded}>

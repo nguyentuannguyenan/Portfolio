@@ -6,20 +6,19 @@ const navbar = () => {
   const items = [
     {
       label: "About",
-      bgColor: "#0D0716",
+      bgColor: "#271E37",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" },
-        { label: "Careers", ariaLabel: "About Careers" }
+        { label: "Who is Andre?", ariaLabel: "About Company" },
+        { label: "Is he even real?", ariaLabel: "About Careers" }
       ]
     },
     {
       label: "Projects", 
-      bgColor: "#170D27",
+      bgColor: "#271E37",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" }
+        { label: "Featured Projects", ariaLabel: "Featured Projects" },
       ]
     },
     {
@@ -27,9 +26,9 @@ const navbar = () => {
       bgColor: "#271E37", 
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" },
-        { label: "Twitter", ariaLabel: "Twitter" },
-        { label: "LinkedIn", ariaLabel: "LinkedIn" }
+        { label: "Instagram", ariaLabel: "Follow me" },
+        { label: "GitHub", ariaLabel: "Follow me" },
+        { label: "LinkedIn", ariaLabel: "Let's connect" }
       ]
     }
   ];
