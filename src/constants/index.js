@@ -195,7 +195,7 @@ export const mySocials = [
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/de.andre_nguyen/",
+    href: "https://www.instagram.com/andrenalineeeee/",
     icon: "/assets/socials/instagram.svg",
   },
   {
